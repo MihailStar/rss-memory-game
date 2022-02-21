@@ -1,0 +1,8 @@
+include ../container/container.pug
+
+mixin header
+  header.header&attributes(attributes)
+    +container
+      .header__row
+        h1.header__title= pageTitle
+        a.header__score-link(href="#open-score") Score

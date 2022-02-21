@@ -1,0 +1,25 @@
+extends ./templates/main.pug
+
+block variables
+  -
+    const documentLanguage = 'en';
+    const pageClass = 'memory-game';
+    const pageTitle = 'Memory Game';
+    const isVisibleForRobots = false;
+
+block head
+  meta(name="color-scheme", content="light dark")
+  link(rel="preconnect", href="https://fonts.googleapis.com")
+  link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+  link(
+    rel="stylesheet",
+    href="https://fonts.googleapis.com/css2?family=Gruppo&&display=swap"
+  )
+block body
+  noscript You need to enable JavaScript to run this app
+  .memory-game__header
+    +header
+  .memory-game__main
+    +main
+  .memory-game__footer
+    +footer

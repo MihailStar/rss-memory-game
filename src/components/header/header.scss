@@ -1,0 +1,42 @@
+@use '../container/container';
+
+.header {
+  color: #eeeeee;
+  background-color: rgba(#111111, 0.5);
+  transition: background-color 300ms;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(#eeeeee, 0.5);
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  &__score-link {
+    color: inherit;
+    transition: color 300ms;
+
+    &:hover {
+      color: #111111;
+    }
+
+    &:focus {
+      color: #111111;
+      outline: 0;
+    }
+  }
+}

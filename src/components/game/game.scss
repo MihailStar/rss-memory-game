@@ -1,0 +1,13 @@
+@use './cards/cards';
+
+.game {
+  &_can-move {
+    &_true {
+      pointer-events: auto;
+    }
+
+    &_false {
+      pointer-events: none;
+    }
+  }
+}

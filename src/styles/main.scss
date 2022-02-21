@@ -1,0 +1,48 @@
+@use '../components/header/header';
+@use '../components/main/main';
+@use '../components/footer/footer';
+
+* {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+a {
+  color: inherit;
+}
+
+.memory-game {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: 'Gruppo', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #111111;
+    background-color: #eeeeee;
+    transition: color 300ms, background-color 300ms;
+
+    @media (prefers-color-scheme: dark) {
+      color: #eeeeee;
+      background-color: #111111;
+    }
+  }
+
+  &__main {
+    flex-grow: 1;
+  }
+}

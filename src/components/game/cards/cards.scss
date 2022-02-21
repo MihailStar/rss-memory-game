@@ -1,0 +1,12 @@
+@use '../card/card';
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 24px;
+
+  &__card {
+    flex-shrink: 0;
+  }
+}
